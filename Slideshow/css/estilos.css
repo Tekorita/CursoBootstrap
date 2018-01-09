@@ -1,0 +1,7 @@
+.navbar-default {
+	border-radius: 5px;
+}
+
+li a:hover {
+	background: #090809;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Horizontal</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<!-- 
+		Controles Soportados con Form-control
+s
+		text,password,datetime,datetime-local,date,month,time,week,number,email,url,search,tel,color
+	 -->
+	<div class="container">
+		<br>
+		<form action="" class="form-horizontal">
+		<!-- clase form-group es para realizar un apartado con  margenes de los elementos -->
+		<!-- <fieldset disabled> funciona para deshabilitar todos los elementos que se encuentren dentro del form-->
+		
+		<!-- Las clases para darle estilos a las validaciones son
+			has-error,has-success,has-warnig
+
+			OJO ES IMPORTANTE Y OBLIGATORIO COLOCARLE A LOS LABELS EL CONTROL LABEL PARA QUE PUEDA RECIBIR LAS VALIDACIONES Y OTROS ESTILOS
+		 -->
+
+			<div class="form-group has-error">
+				<label for="nombre" class="control-label col-md-2">Nombre:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" placeholder="Nombre:" id="nombre">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="nombre" class="control-label col-md-2">Nombre:</label>
+				<div class="col-md-10">
+					<p class="form-control-static">David Jesus Palma</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="correo" class="control-label col-md-2">Correo:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="correo" placeholder="Correo">
+				</div>				
+			</div>
+
+			<div class="form-group">
+				<div class="checkbox col-md-2 col-md-offset-2">
+					<label>
+						<input type="checkbox" name="form-control" id="">Recuerdame</input>
+					</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-md-2 col-md-offset-2">
+					<button class="btn btn-primary">Enviar</button>
+				</div>
+			</div>
+		<!-- </fieldset> -->
+
+		<!-- Ejemplo de checkbox organizados -->
+			<div class="checkbox">
+				<label for="">
+					<input type="checkbox" name="" id=""> Checkbox #1
+				</label>
+			</div>
+	
+			<div class="checkbox">
+				<label for="">
+					<input type="checkbox" name="" id=""> Checkbox #1
+				</label>
+			</div>
+
+			<div class="checkbox">
+				<label for="">
+					<input type="checkbox" name="" id=""> Checkbox #1
+				</label>
+			</div>
+			
+		<!-- Ejemplo de radios organizados -->
+
+			<div class="radio">
+				<label for="radio1">
+					<input type="radio" name="opcion" id="radio1">Radio Button #1</input>
+				</label>
+			</div>
+
+			<div class="radio">
+				<label for="radio2">
+					<input type="radio" name="opcion" id="radio2">Radio Button #2</input>
+				</label>
+			</div>
+
+			<div class="radio">
+				<label for="radio3">
+					<input type="radio" name="opcion" id="radio3">Radio Button #3</input>
+				</label>
+			</div>
+
+			<div class="radio">
+				<label for="radio4">
+					<input type="radio" name="opcion" id="radio4">Radio Button #4</input>
+				</label>
+			</div>
+
+		<!-- Ejemplo de checkbox en linea -->
+			<div class="form-group">
+				<label class="checkbox-inline">
+					<input type="checkbox" name="" id=""> Checkbox #1
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" name="" id=""> Checkbox #2
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" name="" id=""> Checkbox #3
+				</label><br>
+			</div>
+		<!-- Ejemplo de radio buttons en linea -->
+			<div class="form-group">
+				<label for="radio1" class="radio-inline">
+					<input type="radio" name="opcion" id="radio1">Radio Button #1</input>
+				</label>
+				<label for="radio2" class="radio-inline">
+					<input type="radio" name="opcion" id="radio2">Radio Button #2</input>
+				</label>
+				<label for="radio3" class="radio-inline">
+					<input type="radio" name="opcion" id="radio3">Radio Button #3</input>
+				</label>
+			</div>
+		</form>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

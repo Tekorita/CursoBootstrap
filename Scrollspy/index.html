@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scrollspy</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+	<style>
+		body{
+			position: relative;
+		}
+		.seccion {
+			padding-top:70px;
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-targe="#navegacion">
+	<div class="container">
+		
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navegacion">
+						<span class="sr-only"> Mostrar navegacion</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Logotipo</a>
+				</div>
+				<div class="collapse navbar-collapse" id ="navegacion">
+					<ul class="nav navbar-nav" role="tablist">
+						<li class="active"><a href="#seccion1">Seccion 1</a></li>
+						<li><a href="#seccion2">Seccion 2</a></li>
+						<li><a href="#seccion3">Seccion 3</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="main">
+			<div class="col-md-4">
+				<div class="seccion" id="seccion1">
+					<h2>Titulo de contenido 1</h2>
+					<p>Durante el 2014 y 2015, los diseñadores han tenido la oportunidad de ver cómo muchos le han apostado el todo por el todo a creer en digital como el gran skill de la nueva generación de diseñadores. Han nacido (y caído) muchas propuestas para hacer que los diferentes procesos creativos sean fáciles, mejores y efectivos.</p>
+					<p>Bajo esta premisa, Adobe lanzó su primera Beta pública de Experience Design (antes Project Comet). Experience Design (XD) es la apuesta que hacen para tener un producto de la Creative Cloud enfocado 100% al diseño de interfaces. </p>
+				</div>
+				<div class="seccion" id="seccion2">
+					<h2>Titulo de contenido 2</h2>
+					<p>Durante el 2014 y 2015, los diseñadores han tenido la oportunidad de ver cómo muchos le han apostado el todo por el todo a creer en digital como el gran skill de la nueva generación de diseñadores. Han nacido (y caído) muchas propuestas para hacer que los diferentes procesos creativos sean fáciles, mejores y efectivos.</p>
+					<p>Bajo esta premisa, Adobe lanzó su primera Beta pública de Experience Design (antes Project Comet). Experience Design (XD) es la apuesta que hacen para tener un producto de la Creative Cloud enfocado 100% al diseño de interfaces. </p>
+				</div>
+				<div class="seccion" id="seccion3">
+					<h2>Titulo de contenido 3</h2>
+					<p>Durante el 2014 y 2015, los diseñadores han tenido la oportunidad de ver cómo muchos le han apostado el todo por el todo a creer en digital como el gran skill de la nueva generación de diseñadores. Han nacido (y caído) muchas propuestas para hacer que los diferentes procesos creativos sean fáciles, mejores y efectivos.</p>
+					<p>Bajo esta premisa, Adobe lanzó su primera Beta pública de Experience Design (antes Project Comet). Experience Design (XD) es la apuesta que hacen para tener un producto de la Creative Cloud enfocado 100% al diseño de interfaces. </p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

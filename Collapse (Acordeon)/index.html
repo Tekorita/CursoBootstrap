@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Acordeon</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/estilos.css"> -->
+	<!-- Optional theme -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="container-fluid">
+		<br>
+		
+		<a href="#seccion" class="btn btn-primary" data-toggle="collapse">Mostrar / Ocultar</a>
+		<div class="collapse" id="seccion">
+			<br>
+			<div class="well">
+				<p>Llevas un par de días trabajando en una interfaz increíble; ves que todos los elementos funcionan de manera natural. Es el momento de integrar un lenguaje iconográfico a tu trabajo. Te enfrentas a dos posibles caminos: buscar un set de íconos que no se pensaron para tu interfaz, pero puede que se acomoden; o te puedes aventurar a hacerlos tú mismo y darle ese push extra que le hacía falta a tu diseño.</p>
+			</div>
+		</div>
+		<br><br>
+		<!-- Acordeon -->
+		
+		<div class="panel-group" id="accordion" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading1">
+					<h4 class="panel-title">
+						<a href="#collapse1" data-toggle="collapse" data-parent="#accordion"> 
+							Encabezado #1
+						</a>
+					</h4>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<p>Conseguir excelentes resultados a la hora de diseñar un producto digital va mucho más allá de tu stack personal de trabajo. Crear productos digitales exitosos depende de saber plantearse las preguntas correcta antes de considerar dar un solo clic.
+						</p>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading2">
+					<h4 class="panel-title">
+						<a href="#collapse2" data-toggle="collapse" data-parent="#accordion"> 
+							Encabezado #2
+						</a>
+					</h4>
+				</div>
+				<div id="collapse2" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>Conseguir excelentes resultados a la hora de diseñar un producto digital va mucho más allá de tu stack personal de trabajo. Crear productos digitales exitosos depende de saber plantearse las preguntas correcta antes de considerar dar un solo clic.
+						</p>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading3">
+					<h4 class="panel-title">
+						<a href="#collapse3" data-toggle="collapse" data-parent="#accordion"> 
+							Encabezado #3
+						</a>
+					</h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>Conseguir excelentes resultados a la hora de diseñar un producto digital va mucho más allá de tu stack personal de trabajo. Crear productos digitales exitosos depende de saber plantearse las preguntas correcta antes de considerar dar un solo clic.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

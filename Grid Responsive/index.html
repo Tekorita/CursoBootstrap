@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pruebas en Boostrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<!-- clase container propia de bootstrap para centrar el contenido o elementos
+			clasee container-fluid funciona igual q container pero sin margenes
+		-->
+		<div class="container">
+			<h1>Header</h1>
+		</div>
+	</header>
+	<div class="container-fluid">
+		<!-- clase row de botstrap para establecer los elementos en una fila que siempre tiene q cumplir con la norma de 12 columnas -->
+		<section class="main row">
+			<!-- clase col-md N° para establecer al elemento cuantas columnas abarcara teniendo en cuenta que tienen que sumar en total 12 columnas
+				ejemplo col-md-9 + col-md-3
+
+				existen 4 tipos de columnas
+				col-xs (extra-small:dispositivos celulares)
+				col-sm (small:dispositivos celulares tipo tablas pequeñas)
+				col-md (medium:tabletas grande horizontales)
+				col-lg (large:Laptos o pc)
+			 -->
+
+
+			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+				<h2>Articulo-Article</h2>
+				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.
+				<a href="#" class="btn btn-primary visible-lg-block visible-md-inline-block">Boton</a>
+				</p>
+			</article>
+			<!-- clase para ocultar hidden-md y mostrar visible-lg 
+			 para mas infor http://getbootstrap.com/css/#responsive-utilities
+			-->
+			<aside class = "visible-lg visible-md hidden-xs col-xs-12 col-sm-4 col-md-3 col-lg-3">
+				<h2>Sidebar</h2>
+				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.</p>
+			</aside>
+		</section>
+		<!-- Si a unos de los articles se le agrega mas informacion que altera el tamaño de su contenedor ocacionando que se descuadre el diseño al visualizar en una resolucion pequeña existe una clase de bootstrap para resolver ese problema y se llama clearfix  
+
+		existe una clase de bootstrap para mover a la derecha un contenedor usando como rango la cantidad de columnas en las q se correrarn ejemplo col-md-offset-3
+	-->
+		<div class="row">
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<h2>Columna</h2>
+				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.</p>
+<!-- 				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.</p>
+ -->		</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h2>Columna</h2>
+				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.</p>
+			</div>
+			<!-- <div class="clearfix visible-sm-block"></div> -->
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<h2>Columna</h2>
+				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h2>Columna</h2>
+				<p>Firefox OS es el nuevo sistema operativo libre para teléfonos móviles y tabletas de la Fundación Mozilla, que utiliza software libre y se programa en HTML5, utilizando HTML, CSS y Javascript, igual que las aplicaciones Web de los grandes portales de Internet, Google, Twitter, Facebook, Amazon. etc. Su calidad y carácter abierto ha conseguido el apoyo de Telefónica, Qualcomm, LG, Huawei Foxconn, etc.</p>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<h3>David palma</h3>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

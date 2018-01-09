@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabs Dinamicas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/estilos.css"> -->
+	<!-- Optional theme -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5">
+				
+				<div role="tabpanel">
+					
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="active" role="presentation"><a href="#seccion1" aria-controls="" data-toggle="tab" role="tab">Seccion #1</a></li>
+						<li role="presentation"><a href="#seccion2" aria-controls="" data-toggle="tab" role="tab">Seccion #2</a></li>
+						<li role="presentation"><a href="#seccion3" aria-controls="" data-toggle="tab" role="tab">Seccion #3</a></li>		
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id ="seccion1">
+							<h3>Seccion #1</h3>
+							<p>Conseguir excelentes resultados a la hora de diseñar un producto digital va mucho más allá dedi</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id ="seccion2">
+							<h3>Seccion #2</h3>
+							<p>Conseguir excelentes resultados a la hora de diseñar un producto digital va mucho más de saber plaguntas correcta antes de considerar dar un solo clic.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id ="seccion3">
+							<h3>Seccion #3</h3>
+							<p>Conseguir excelentes resultados a la hora de diseñar un producto digital va mucho más allá de tu stack personal de trabajo. Crear productos digitales exitosos depende de saber plantearse las preguntas correcta antes de considerar dar un solo clic.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
